@@ -12,7 +12,7 @@ public class NumberGuessingGame {
         System.out.println("Welcome to the number guessing game!");
 
         while (true) {
-            int secretNumber = rng.nextInt(MAX - MIN + 1) + MIN;
+            int secretNumber = rng.nextInt(1,100);
             int attempts = 0;
             System.out.println("Please guess a number between " + MIN + " and " + MAX + ".");
             System.out.println("Try your luck! You have " + MAX_TRIES + " attempts.");
